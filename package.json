@@ -29,5 +29,10 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {}
+  "devDependencies": {
+    "jest-canvas-mock": "^2.0.0-beta.1"
+  },
+  "peerDependencies": {
+    "canvas": "^2.3.1"
+  }
 }
