@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { holder } from 'holderjs';
 import { Card, CardGroup } from 'react-bootstrap';
+import Image from "react-graceful-image";
 
 class Featured extends Component {
     constructor(props) {
