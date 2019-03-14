@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { holder } from 'holderjs';
 import { Card, CardGroup } from 'react-bootstrap';
-import Image from "react-graceful-image";
 
 class Featured extends Component {
     constructor(props) {
@@ -38,7 +37,7 @@ class Featured extends Component {
         <CardGroup>
             {movies.map(movie => {
             return <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src="download.jpeg" />
             <Card.Body>
                 <Card.Title>{movie.name}</Card.Title>
                 <Card.Text>

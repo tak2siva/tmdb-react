@@ -1,0 +1,23 @@
+{
+  "name": "tmdb-server",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "dummy": "node ./app.js",
+    "start": "babel-watch ./server.js",
+    "build": "babel server.js --out-dir build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^7.0.0",
+    "nodemon": "^1.18.10"
+  },
+  "peerDependencies": {
+  }
+}
