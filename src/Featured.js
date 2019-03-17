@@ -37,7 +37,7 @@ class Featured extends Component {
         <CardGroup>
             {movies.map(movie => {
             return <Card>
-            <Card.Img variant="top" src="download.jpeg" />
+            <Card.Img variant="top" src="./download.jpeg" />
             <Card.Body>
                 <Card.Title>{movie.name}</Card.Title>
                 <Card.Text>

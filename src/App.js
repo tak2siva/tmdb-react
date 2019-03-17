@@ -3,6 +3,7 @@ import './App.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Featured from './Featured'
 import Movies from './Movies'
+import TVShows from './TVShows'
 import { Route, NavLink, HashRouter, Switch } from 'react-router-dom';
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
           <Row className="justify-content-md-center" key="featured">
               <Route exact path="/" component={Featured}/>
               <Route path="/movies" component={Movies}/>
+              <Route path="/tvshows" component={TVShows}/>
           </Row>
       </Container>
       </HashRouter>
