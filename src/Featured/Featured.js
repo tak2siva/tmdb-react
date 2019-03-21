@@ -18,11 +18,10 @@ class Featured extends Component {
                 this.setState({
                     isLoaded: true,
                     movies: res
-                }, err => {
-                    if (err) {
-                        console.log("Error fetching featured movies ", err)
-                    }
                 })
+            })
+            .catch((error) => {
+                console.log("Error loading featured movies..", error)
             });
     }
 
@@ -36,7 +35,7 @@ class Featured extends Component {
         return (
         <CardGroup>
             {movies.map(movie => {
-            return <Card>
+            return <Card key={movie.name}>
             <Card.Img variant="top" src="./download.jpeg" />
             <Card.Body>
                 <Card.Title>{movie.name}</Card.Title>

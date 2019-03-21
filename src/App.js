@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import Featured from './Featured'
-import Movies from './Movies'
-import TVShows from './TVShows'
+import Featured from './featured/Featured'
+import Movies from './movies/Movies'
+import TVShows from './tvshows/TVShows'
 import { Route, NavLink, HashRouter, Switch } from 'react-router-dom';
 
 class App extends Component {
@@ -21,14 +21,11 @@ class App extends Component {
           </Row>
           <Row key="groups" className="h-25 bg-dark">
             <Col>
-            
-              <div>
                 <ul className="list-inline">
                   <li className="list-inline-item"><NavLink variant="link" className="text-white" to="/"> Featured </NavLink></li>
                   <li className="list-inline-item"><NavLink variant="link" className="text-white" to="/movies"> Movies </NavLink></li>
                   <li className="list-inline-item"><NavLink variant="link" className="text-white" to="/tvshows"> TV Shows </NavLink></li>
                 </ul>
-              </div>
             </Col>
           </Row>
           <Row key="search-bar">

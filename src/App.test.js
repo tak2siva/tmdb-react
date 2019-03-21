@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { configure, shallow } from 'enzyme';
-import Featured from './Featured';
+import Featured from './featured/Featured';
+import Movies from './movies/Movies';
+import TVShows from './tvshows/TVShows';
 import Adapter from 'enzyme-adapter-react-16';
 
 
@@ -18,5 +20,7 @@ describe('<App />', () => {
   it('Always renders Featured List', () => {
     const wrapper = shallow(<App/>);
     expect(wrapper.find(Featured)).toHaveLength(1);
+    // expect(wrapper.find(Movies)).toHaveLength(1);
+    // expect(wrapper.find(TVShows)).toHaveLength(1);
   })
 });
